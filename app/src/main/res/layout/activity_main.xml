@@ -11,8 +11,10 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
         android:layout_marginStart="16dp"
         android:text="Nombre:"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNombre"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="47dp" />
@@ -21,69 +23,76 @@
         android:id="@+id/apellidoP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
         android:text="Apellido Paterno: "
+        app:layout_constraintEnd_toStartOf="@+id/editTextApellidoP"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="97dp" />
 
     <TextView
         android:id="@+id/apellidoM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
         android:text="Apellido Materno: "
+        app:layout_constraintEnd_toStartOf="@+id/editTextApellidoM"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="140dp" />
 
     <TextView
         android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
         android:text="Fecha Nacimiento:"
+        app:layout_constraintEnd_toStartOf="@+id/editTextFechaN"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="177dp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editTextFechaN"
         android:layout_width="177dp"
         android:layout_height="23dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/editTextApellidoM"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="177dp" />
+        tools:layout_editor_absoluteX="140dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextApellidoM"
         android:layout_width="178dp"
         android:layout_height="21dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        app:layout_constraintTop_toBottomOf="@+id/editTextApellidoP"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="140dp" />
+        tools:layout_editor_absoluteX="140dp" />
 
     <TextView
         android:id="@+id/rfctext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="95dp"
         android:text="RFC:"
+        app:layout_constraintEnd_toStartOf="@+id/editTextrfc"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="260dp" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editTextrfc"
         android:layout_width="179dp"
         android:layout_height="22dp"
+        android:layout_marginTop="22dp"
         android:ems="10"
         android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHomonomia"
         tools:background="@android:color/darker_gray"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="260dp" />
+        tools:layout_editor_absoluteX="140dp" />
 
     <Button
         android:id="@+id/acepta"
@@ -109,40 +118,44 @@
         android:id="@+id/homonimia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
         android:text="Homonimia:"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="215dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextHomonomia"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="215dp" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/editTextHomonomia"
         android:layout_width="180dp"
         android:layout_height="23dp"
+        android:layout_marginTop="15dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="215dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextFechaN"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="140dp" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/editTextNombre"
         android:layout_width="177dp"
         android:layout_height="29dp"
+        android:layout_marginTop="47dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="47dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="140dp" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/editTextApellidoP"
         android:layout_width="175dp"
         android:layout_height="27dp"
+        android:layout_marginTop="21dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="97dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="140dp" />
 
 
 </android.support.constraint.ConstraintLayout>
