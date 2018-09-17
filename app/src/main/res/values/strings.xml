@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">generaRFC</string>
+    //Entrada 1
+    <string name="nombre">Nombre: </string>
+    <string name="ApellidoP">Apellido Paterno: </string>
+    <string name="ApellidoM">Apellido Materno: </string>
+    <string name="Fecha">Fecha Nacimiento: </string>
+    <string name="Homonomi">Homonomia: </string>
+    <string name="rfc"> RFC: </string>
+
 </resources>
